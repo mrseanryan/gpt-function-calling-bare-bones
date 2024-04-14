@@ -8,6 +8,10 @@ This repo shows a simple example of an LLM driving a home automation system, by 
 
 The LLM is Anthropic Claude hosted on AWS Bedrock - but any large LLM should work.
 
+The functions are listed in a JSON file. Here is a diagram to show how this approach can be used to control a Home Automation system via natural language:
+
+![function calling example](./diagrams/function-calling.png)
+
 ## Set up
 
 ```shell
