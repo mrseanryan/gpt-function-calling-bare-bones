@@ -81,12 +81,12 @@ Output:
 python -m pipenv run python ./main.py ./data/home-automation-functions.json "I am going on vacation - please adjust my home" --chat
 ```
 
-````
+```
 How can I help? >>turn off the heat
 >> USER: turn off the heat
 === === ===     [3] PROMPT      === === ===
 === === ===     [4] RESPONSE    === === ===
- ```json
+'''json
 [
   {
     "name": "AdjustHeating",
@@ -95,21 +95,9 @@ How can I help? >>turn off the heat
     ]
   }
 ]
-````
+'''
 
 To turn off the heating, I called the AdjustHeating function and set the level parameter to 0. This will adjust the heating to the minimum level to turn it off.
-
-USER >>turn off the heat
-
-POST PROC >>
-[
-{
-"name": "AdjustHeating",
-"parameters": [
-{"name": "level", "value": 0}
-]
-}
-]
 
 How can I help? >>check if lawn is ok
 
@@ -117,7 +105,7 @@ How can I help? >>check if lawn is ok
 > > === === === [5] PROMPT === === ===
 > > === === === [6] RESPONSE === === ===
 
-```json
+'''json
 [
   {
     "name": "CheckIfRainIsDue",
@@ -128,7 +116,7 @@ How can I help? >>check if lawn is ok
     "parameters": []
   }
 ]
-```
+'''
 
 To check if the lawn is okay, I included:
 
@@ -151,7 +139,7 @@ POST PROC >>
 }
 ]
 
-````
+```
 
 ## Testing
 
