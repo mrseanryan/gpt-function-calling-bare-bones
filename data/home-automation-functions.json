@@ -1,0 +1,55 @@
+{
+  "application": "home automation",
+  "functions": [
+    {
+      "name": "AdjustAC",
+      "parameters": [{ "name": "level", "type": "int", "min": 0, "max": 10 }],
+      "returnType": "int"
+    },
+    {
+      "name": "AdjustHeating",
+      "parameters": [{ "name": "level", "type": "int", "min": 0, "max": 10 }],
+      "returnType": "int"
+    },
+    {
+      "name": "AdjustLighting",
+      "parameters": [{ "name": "level", "type": "int", "min": 0, "max": 10 }],
+      "returnType": "int"
+    },
+    {
+      "name": "CheckIfRainIsDue",
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    {
+      "name": "EnableAlarm",
+      "parameters": [{ "name": "enabled", "type": "boolean" }],
+      "returnType": "boolean"
+    },
+    {
+      "name": "EnableHiFi",
+      "parameters": [{ "name": "enabled", "type": "boolean" }],
+      "returnType": "boolean"
+    },
+    {
+      "name": "ReadInternalThermostatFahrenheit",
+      "parameters": [],
+      "returnType": "double"
+    },
+    {
+      "name": "ReadExternalThermostatFahrenheit",
+      "parameters": [],
+      "returnType": "double"
+    },
+    {
+      "name": "ReportSystemStatus",
+      "parameters": [],
+      "returnType": "boolean"
+    },
+    {
+      "name": "WaterLawn",
+      "parameters": [],
+      "returnType": "boolean"
+    }
+  ]
+}
